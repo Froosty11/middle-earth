@@ -21,3 +21,7 @@ run/
 build/
 .idea
 src/main/generated/
+
+#VSC specific output files. 
+bin/main/*
+
