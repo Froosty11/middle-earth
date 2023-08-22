@@ -1,5 +1,6 @@
 package net.jesteur.me.datageneration;
 
+import net.jesteur.me.block.OreRockSets;
 import net.jesteur.me.block.SimpleBlockSets;
 import net.jesteur.me.block.WoodBlockSets;
 import net.jesteur.me.datageneration.content.loot_tables.BlockDrops;
@@ -11,7 +12,7 @@ public class HelpingGenerator {
 
     public static void generateFiles() {
         SimpleBlockSets.registerModBlockSets();
-
+        OreRockSets.registerModBlockSets();
         for (SimpleBlockSets.SimpleBlockSet set : SimpleBlockSets.sets) {
             SimpleBlockModel.blocks.add(set.base());
             SimpleSlabModel.blocks.add(new SimpleSlabModel.Slab(set.base(), set.slab()));
@@ -29,6 +30,13 @@ public class HelpingGenerator {
             MineablePickaxe.blocks.add(set.stairs());
 
             Walls.walls.add(set.wall());
+        }
+        for (OreRockSets.OreRockSet set : OreRockSets.sets) {
+            SimpleBlockModel.blocks.add(set.gold_ore());
+            SimpleBlockModel.blocks.add(set.iron_ore());
+
+            MineablePickaxe.blocks.add(set.gold_ore());
+            MineablePickaxe.blocks.add(set.iron_ore());
         }
 
         for (WoodBlockSets.SimpleBlockSet set : WoodBlockSets.sets) {

@@ -2,6 +2,7 @@ package net.jesteur.me;
 
 import net.fabricmc.api.ModInitializer;
 import net.jesteur.me.block.SimpleBlockSets;
+import net.jesteur.me.block.OreRockSets;
 import net.jesteur.me.block.ModBlocks;
 import net.jesteur.me.block.ModNatureBlocks;
 import net.jesteur.me.block.WoodBlockSets;
@@ -42,6 +43,7 @@ public class MiddleEarth implements ModInitializer {
 		ModItemGroups.register();
 
 		SimpleBlockSets.registerModBlockSets();
+		OreRockSets.registerModBlockSets();
 		WoodBlockSets.registerModBlockSets();
 
 		ModDimensions.register();

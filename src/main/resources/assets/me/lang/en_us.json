@@ -159,6 +159,21 @@
   "block.me.scorched_fence": "Scorched Fence",
   "block.me.scorched_gate": "Scorched Fence Gate",
 
+  "#Comment:": "Iron ores",
+  "block.me.blue_rock_iron_ore": "Bluerock Iron Ore",
+  "block.me.frozen_blue_rock_iron_ore": "Frozen Iron Ore",
+  "block.me.ashen_rock_iron_ore": "Ashen Iron Ore",
+  "block.me.dolomite_iron_ore": "Dolomite Iron Ore",
+  "block.me.calcite_iron_ore": "Calcite Iron Ore",
+
+  "#Comment:": "Gold ores",
+  "block.me.blue_rock_gold_ore": "Blue Rock Gold Ore",
+  "block.me.frozen_blue_rock_gold_ore": "Frozen Gold Ore",
+  "block.me.ashen_rock_gold_ore": "Ashen Gold Ore",
+  "block.me.blue_rock_gold_ore": "Dolomite Gold Ore",
+  "block.me.calcite_gold_ore": "Calcite Gold Ore",
+
+
   "itemGroup.blocks": "Blocks",
   "itemGroup.food": "Food",
   "itemGroup.weapons": "Weapons",
