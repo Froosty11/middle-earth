@@ -34,9 +34,13 @@ public class HelpingGenerator {
         for (OreRockSets.OreRockSet set : OreRockSets.sets) {
             SimpleBlockModel.blocks.add(set.gold_ore());
             SimpleBlockModel.blocks.add(set.iron_ore());
+            SimpleBlockModel.blocks.add(set.coal_ore());
+            SimpleBlockModel.blocks.add(set.copper_ore());
 
             MineablePickaxe.blocks.add(set.gold_ore());
             MineablePickaxe.blocks.add(set.iron_ore());
+            MineablePickaxe.blocks.add(set.coal_ore());
+            MineablePickaxe.blocks.add(set.copper_ore());
         }
 
         for (WoodBlockSets.SimpleBlockSet set : WoodBlockSets.sets) {
