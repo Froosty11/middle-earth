@@ -13,7 +13,6 @@ import net.jesteur.me.entity.pebble.PebbleEntity;
 import net.jesteur.me.entity.spear.SpearEntity;
 import net.jesteur.me.entity.trolls.cave.CaveTrollEntity;
 import net.jesteur.me.entity.trolls.snow.SnowTrollEntity;
-import net.jesteur.me.entity.monsters.barrow_wight.BarrowWightEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
@@ -42,8 +41,6 @@ public class ModEntities {
     // Trolls
     public static final EntityType<CaveTrollEntity> CAVE_TROLL = registerEntity("cave_troll", CaveTrollEntity::new, SpawnGroup.CREATURE, 1.4f, 3.4f);
     public static final EntityType<SnowTrollEntity> SNOW_TROLL = registerEntity("snow_troll", SnowTrollEntity::new, SpawnGroup.CREATURE, 1.4f, 3.4f);
-    //Unaligned Monsters
-    public static final EntityType<BarrowWightEntity> BARROWWIGHT = registerEntity("barrow_wight", BarrowWightEntity :: new, SpawnGroup.MONSTER, 0, 0);
     ///* Weapons *///
     public static final EntityType<PebbleEntity> PEBBLE = registerEntity("pebble", PebbleEntity::new, SpawnGroup.MISC, 0.25F, 0.25F);
     public static final EntityType<SpearEntity> SPEAR = registerEntity("spear", SpearEntity::new, SpawnGroup.MISC, 0.5F, 0.5F);
@@ -66,7 +63,6 @@ public class ModEntities {
         FabricDefaultAttributeRegistry.register(GALADHRIM_ELF, GaladhrimElfEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(MORDOR_ORC, MordorOrcEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(SNOW_TROLL, SnowTrollEntity.setAttributes());
-        FabricDefaultAttributeRegistry.register(BARROWWIGHT, BarrowWightEntity.createHostileAttributes());
         // Animals
         FabricDefaultAttributeRegistry.register(CRAB, CrabEntity.createCrabAttributes());
 
