@@ -7,7 +7,9 @@
     "BlockEntityLandedMixin",
     "EntitySpawnMixin",
     "ItemRendererMixin",
-    "PlayerMixin"
+    "PlayerMixin",
+    "InGameHUDInvoker",
+    "EntityDataSaverMixin"
   ],
   "client": [
     "ElytraFeatureRendererMixin",
